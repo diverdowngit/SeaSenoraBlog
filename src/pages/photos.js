@@ -10,7 +10,7 @@ export default class PhotosPage extends Component {
     super(props);
     this.state = {
       activePopup: false,
-      selectedItem: 0
+      selectedItem: 0,
     };
   }
 
@@ -35,10 +35,11 @@ export default class PhotosPage extends Component {
                   <li key={index} className="item">
                     <div
                       className="inner"
+                      role="presentation"
                       onClick={() => {
                         this.setState({
                           activePopup: true,
-                          selectedItem: index
+                          selectedItem: index,
                         });
                       }}
                     >
@@ -56,9 +57,10 @@ export default class PhotosPage extends Component {
               <div className="rg-popup">
                 <span
                   className="popup-layer"
+                  role="presentation"
                   onClick={() => {
                     this.setState({
-                      activePopup: false
+                      activePopup: false,
                     });
                   }}
                 ></span>
@@ -66,9 +68,10 @@ export default class PhotosPage extends Component {
                 <div className="popup-inner">
                   <i
                     className="fas fa-times"
+                    role="presentation"
                     onClick={() => {
                       this.setState({
-                        activePopup: false
+                        activePopup: false,
                       });
                     }}
                   ></i>

@@ -45,14 +45,15 @@ export default class Banner extends Component {
                   rel="noopener noreferrer"
                 ></a>
               </li>
-              {/* <li>
+               <li>
                 <a
-                  className="fab fa-linkedin-in"
+               
+                  className=" fab fa-patreon"
                   href={data.linkdin}
                   target="_blank"
                   rel="noopener noreferrer"
                 ></a>
-              </li>*/}
+              </li>
               <li>
                 <a
                   className="fab fa-youtube"

@@ -12,6 +12,7 @@ import Blogs from "../components/blogs";
 import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
 import Photos from "../components/photos";
+import Ewv from "./Ewv";
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
@@ -20,8 +21,8 @@ const IndexPage = ({ data }) => (
       keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`]}
     />
     <Banner data={data.contentfulAboutMe}></Banner>
-
-    {/* {data.contentfulSiteInformation.menus
+<Ewv/>
+   {/*  {data.contentfulSiteInformation.menus
       .filter(item => item === "About")
       .map(t => {
         return <About key="About" data={data.contentfulAboutMe}></About>;
@@ -127,7 +128,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulBlogs(limit: 5, sort: {fields: createdAt, order: DESC}) {
+    allContentfulBlogs(limit: 4, sort: {fields: createdAt, order: DESC}) {
       edges {
         node {
           title

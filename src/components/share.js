@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {
   FacebookShareButton,
-  TwitterShareButton,
+  // TwitterShareButton,
   WhatsappShareButton
 } from "react-share";
 
@@ -19,7 +19,7 @@ const Share = ({ socialConfig }) => {
         </span>
         <span className="text">Facebook</span>
       </FacebookShareButton>
-      <TwitterShareButton
+      {/* <TwitterShareButton
         url={socialConfig.config.url}
         className="button is-outlined is-rounded twitter"
         title={socialConfig.config.title}
@@ -29,7 +29,7 @@ const Share = ({ socialConfig }) => {
           <i className="fab fa-twitter"></i>
         </span>
         <span className="text">Twitter</span>
-      </TwitterShareButton>
+      </TwitterShareButton> */}
       <WhatsappShareButton
         url={socialConfig.config.url}
         className="button is-outlined is-rounded whatsapp"

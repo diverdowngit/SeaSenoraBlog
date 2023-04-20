@@ -45,14 +45,14 @@ export default class Header extends Component {
                   }}
                 >
                   <li key="home">
-                    <Link to="/#home">Home</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   {data.menus
                     .filter(item => item === "About")
                     .map(t => {
                       return (
                         <li key="About">
-                          <Link to={`/#About`}>About</Link>
+                          <Link to={`/about`}>About</Link>
                         </li>
                       );
                     })}
@@ -70,7 +70,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li key="Blogs">
-                          <Link to={`/#Blogs`}>Blogs</Link>
+                          <Link to={`/blogs`}>Blogs</Link>
                         </li>
                       );
                     })}
@@ -98,7 +98,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li key="Photos">
-                          <Link to={`/#Photos`}>Photos</Link>
+                          <Link to={`/photos`}>Photos</Link>
                         </li>
                       );
                     })}
@@ -123,8 +123,17 @@ export default class Header extends Component {
                   }}
                 >
                   <li key="home">
-                    <Link to="/#home">Home</Link>
+                    <Link to="/">Home</Link>
                   </li>
+                  {data.menus
+                    .filter(item => item === "About")
+                    .map(t => {
+                      return (
+                        <li key="About">
+                          <Link to={`/about`}>About</Link>
+                        </li>
+                      );
+                    })}
                   {data.menus
                     .filter(item => item === "Blogs")
                     .map(t => {
@@ -134,6 +143,7 @@ export default class Header extends Component {
                         </li>
                       );
                     })}
+                    
                   {data.menus
                     .filter(item => item === "Photos")
                     .map(t => {

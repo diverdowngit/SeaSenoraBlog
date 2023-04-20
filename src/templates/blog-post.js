@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import moment from "moment";
-import { DiscussionEmbed } from "disqus-react";
+// import { DiscussionEmbed } from "disqus-react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -11,11 +11,11 @@ import Share from "../components/share";
 export default class blogPost extends Component {
   render() {
     const data = this.props.data.contentfulBlogs;
-    const disqusShortname = "RohitGupta";
-    const disqusConfig = {
-      identifier: data.id,
-      title: data.title
-    };
+    // const disqusShortname = "RohitGupta";
+    // const disqusConfig = {
+    //   identifier: data.id,
+    //   title: data.title
+    // };
 
     const siteurl = this.props.data.contentfulSiteInformation.siteUrl + "/";
     const twitterhandle = this.props.data.contentfulSiteInformation
@@ -33,9 +33,8 @@ export default class blogPost extends Component {
         <SEO
           title={data.title}
           keywords={[
-            `Rohit Gupta`,
-            `Frontend Developer`,
-            `Developer`,
+            `SV Sea Senora`
+            ,
             `${data.title}`
           ]}
         />
@@ -73,10 +72,10 @@ export default class blogPost extends Component {
                 }
               }}
             />
-            <DiscussionEmbed
+            {/* <DiscussionEmbed
               shortname={disqusShortname}
               config={disqusConfig}
-            />
+            /> */}
           </div>
         </div>
       </Layout>
