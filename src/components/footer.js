@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai"
 import { FaFacebookF } from "react-icons/fa"
-import Logo from "../images/logowhite.png"
+import Logo from "../images/Logowhite.png"
 
 import {
   container,
