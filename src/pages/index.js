@@ -89,7 +89,7 @@ export const pageQuery = graphql`
         }
       }
       designation
-      
+      age
       facebook
       github
       gmail
@@ -97,7 +97,12 @@ export const pageQuery = graphql`
       instagram
       linkdin
       twitter
-     
+      location
+      description {
+        childMarkdownRemark {
+          html
+        }
+      }
       bannerImage {
         fluid(maxWidth: 1500) {
           base64
