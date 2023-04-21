@@ -2,6 +2,19 @@
   font-size: clamp(.5rem, 6vw, .5rem);     
 }
 
+.overlay {
+  position: relative;
+}
+
+.overlay h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: white;
+  font-size:3vh;
+}
 
 .alignImages{
   display: flex;
@@ -97,4 +110,14 @@
     font-size: clamp(0.8rem, 6vw, 1rem);
     gap: 1rem;
   }
+  .overlay h2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    color: white;
+    font-size:2vh;
+  }
+  
 }

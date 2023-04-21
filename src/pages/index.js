@@ -5,12 +5,12 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import Banner from "../components/banner";
-import About from "../components/about";
-import Service from "../components/service";
-import Work from "../components/work";
+// import About from "../components/about";
+// import Service from "../components/service";
+// import Work from "../components/work";
 import Blogs from "../components/blogs";
-import Testimonial from "../components/testimonial";
-import Contact from "../components/contact";
+// import Testimonial from "../components/testimonial";
+// import Contact from "../components/contact";
 import Photos from "../components/photos";
 import Ewv from "./Ewv";
 
@@ -60,11 +60,11 @@ const IndexPage = ({ data }) => (
         return <Photos key="Photos" data={data.contentfulPhotos}></Photos>;
       })}
 
-    {data.contentfulSiteInformation.menus
+    {/* {data.contentfulSiteInformation.menus
       .filter(item => item === "Contact")
       .map(t => {
         return <Contact key="Contact" data={data.contentfulAboutMe.gmail}></Contact>;
-      })}
+      })} */}
   </Layout>
 );
 

@@ -7,6 +7,7 @@ import {
   imgsiz,
   alignImages,
   alignImages2,
+  overlay,
 } from "../css/About.module.css";
 import Img from "../images/aboutTravel1.jpg";
 import Youtube from "../images/youtube-logo.png";
@@ -16,8 +17,10 @@ import Seo from "../components/seo";
 const AboutPage = ({ data }) => {
   return (
     <Layout>
-      <img src={Img} width="100%"  />
-
+      <div className={overlay}>
+      <img src={Img} width="100%" alt="small island" />
+      <h2 className={adminText}>Our Passion For Travel Is The Foundation Of Sv Sea Senora. </h2>
+      </div>
       <div className={container}>
         <div>
           <h2 className={adminTravel}>About Us</h2>

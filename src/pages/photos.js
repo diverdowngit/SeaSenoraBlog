@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
-
+import {
+  imgbox,
+  transparentbox,
+  caption,
+} from '../css/PhotoGallery.module.css'
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -22,7 +26,7 @@ export default class PhotosPage extends Component {
       <Layout>
         <SEO
           title="Photos"
-          keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`, `Photo`]}
+          keywords={[`Photos`]}
         />
         <div className="site-container blogs-page" id="Blogs">
           <div className="container">
@@ -42,13 +46,15 @@ export default class PhotosPage extends Component {
                           selectedItem: index,
                         });
                       }}
-                    >
+                    > 
                       <Img
                         fluid={item.fluid}
                         objectFit="cover"
                         objectPosition="50% 50%"
                       />
-                    </div>
+                     
+                </div>
+                    
                   </li>
                 );
               })}
@@ -74,13 +80,18 @@ export default class PhotosPage extends Component {
                         activePopup: false,
                       });
                     }}
-                  ></i>
+                  ></i><div className={imgbox} >
                   <img
                     src={data.contentfulPhotos.photos[selectedItem].file.url}
                     alt="popup-img"
                   />
+                   <div className={transparentbox}>
+                  <div className={caption}>
+                    <h3>{data.contentfulPhotos.photos[selectedItem].description}</h3>
+                  </div>
                 </div>
-              </div>
+                </div>
+              </div></div>
             ) : (
               ""
             )}
@@ -94,8 +105,10 @@ export const pageQuery = graphql`
   query PhotosPageQuery {
     contentfulPhotos {
       photos {
+        description
         file {
           url
+         
         }
         fluid(maxWidth: 600) {
           base64

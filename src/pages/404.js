@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import Img from '../images/boatbroke.jpg'
 const NotFoundPage = () => (
   <Layout>
-     <img src={Img} width="100%"  />
+     <img src={Img} width="100%" alt='sunken boat' />
     <div
       style={{
         display: 'flex',

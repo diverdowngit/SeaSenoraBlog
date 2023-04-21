@@ -1,0 +1,140 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 14rem 1.6rem;
+  color: #333;
+}
+.wrapper {
+ justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  
+}
+.wrapper img{
+  width: auto;
+  height: 7rem;
+  background-color: #fff;
+}
+.overlay {
+  position: relative;
+}
+
+.overlay h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: white;
+  font-size:3vh;
+}
+.bookingwrapper{ 
+    display: flex;
+    gap: 1rem;
+}
+.bookingwrapper img{
+  width: 2rem;
+  height: 1rem;
+}
+
+.aboutText {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.aboutCards {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.explorewrapper button,a{
+ width: 55%;
+ text-align: center;
+}
+
+.explorewrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #649cf8;
+  padding: 20px 40px 20px 40px;
+}
+.staywrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #E3E8F0;
+  padding: 20px 40px 20px 40px;
+}
+
+.staywrapper a {
+  /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 14px 10px 14px;
+}
+.explorewrapper button{
+  /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 14px 10px 14px;
+}
+
+.aboutCards a,button{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: .9em;
+  padding: 10px 14px 10px 14px;
+}
+p {
+  font-family: 'Luminari', sans-serif;
+  font-weight:400;
+ text-align: justify;
+}
+.adminText {
+  font-size: clamp(1.2rem, 6vw, .5rem);   
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  text-align: justify;
+  font-family: 'luminari', sans-serif;
+}
+@media (max-width: 600px){
+  .bookingwrapper{
+    flex-direction: column;
+  }
+
+  .buttontext{
+    font-size: .2rem;
+    padding: 0px 0px 0px 0px
+  }
+
+  .staywrapper a {
+    padding: 1px 1px 1px 1px
+  }
+  .adminText {
+    font-size: clamp(0.8rem, 6vw, 1rem);
+    gap: 1rem;
+  }
+  .overlay h2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    color: white;
+    font-size:2vh;
+  }
+  
+}

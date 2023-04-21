@@ -101,7 +101,9 @@ export default class Header extends Component {
                           <Link to={`/photos`}>Photos</Link>
                         </li>
                       );
-                    })}
+                    })} <li key="Keepafloat">
+                    <Link to={`/Keepafloat`}>Keepafloat</Link>
+                  </li>
                   {data.menus
                     .filter(item => item === "Contact")
                     .map(t => {
@@ -153,6 +155,9 @@ export default class Header extends Component {
                         </li>
                       );
                     })}
+                    <li key="Keepafloat">
+                    <Link to={`/Keepafloat`}>Keepafloat</Link>
+                  </li>
                 </ul>
               </div>
             )}
