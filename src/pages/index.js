@@ -74,7 +74,7 @@ export const pageQuery = graphql`
   query AboutQuery {
     contentfulAboutMe {
       name
-      photo {
+     photo {
         file {
           url
         }
@@ -89,7 +89,7 @@ export const pageQuery = graphql`
         }
       }
       designation
-      age
+      
       facebook
       github
       gmail
@@ -97,12 +97,7 @@ export const pageQuery = graphql`
       instagram
       linkdin
       twitter
-      location
-      description {
-        childMarkdownRemark {
-          html
-        }
-      }
+     
       bannerImage {
         fluid(maxWidth: 1500) {
           base64
