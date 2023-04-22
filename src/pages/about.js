@@ -12,7 +12,7 @@ import {
 import Img from "../images/aboutTravel1.jpg";
 import Youtube from "../images/youtube-logo.png";
 import Seo from "../components/seo";
-// import StyledHero from "../components/StyledHero"
+
 
 const AboutPage = ({ data }) => {
   return (

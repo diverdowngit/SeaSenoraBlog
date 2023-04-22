@@ -40,13 +40,7 @@
   height: 1rem;
 }
 
-.aboutText {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-}
+
 
 .aboutCards {
   font-size: 1.5rem;
@@ -54,18 +48,9 @@
   flex-direction: column;
   gap: 2rem;
 }
-.explorewrapper button,a{
- width: 55%;
- text-align: center;
-}
 
-.explorewrapper {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  background-color: #649cf8;
-  padding: 20px 40px 20px 40px;
-}
+
+
 .staywrapper {
   margin-top: 40px;
   display: flex;
@@ -75,13 +60,6 @@
 }
 
 .staywrapper a {
-  /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 14px 10px 14px;
-}
-.explorewrapper button{
   /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
   color: #fff;
   border: none;
