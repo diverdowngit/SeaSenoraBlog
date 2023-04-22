@@ -25,7 +25,9 @@ export default class Header extends Component {
                 )}
               </Link>
             </div>
+            
             <div
+            aria-hidden="true"
               className="responsive-menu"
               onClick={() => {
                 this.setState({
@@ -38,6 +40,7 @@ export default class Header extends Component {
             {header === "home" ? (
               <div className="menu">
                 <ul
+                aria-hidden="true"
                   onClick={() => {
                     this.setState({
                       menu: false
@@ -118,6 +121,7 @@ export default class Header extends Component {
             ) : (
               <div className="menu">
                 <ul
+                aria-hidden="true"
                   onClick={() => {
                     this.setState({
                       menu: false

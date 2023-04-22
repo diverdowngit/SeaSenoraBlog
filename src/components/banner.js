@@ -22,12 +22,16 @@ export default class Banner extends Component {
             </ul>
             <ul className="social">
               <li>
+                
                 <a
                   className="fab fa-facebook-f"
                   href={data.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                ></a>
+                  aria-label="facebook"
+                  alt="facebook"
+                  
+                >{}</a>
               </li>
               {/* <li>
                 <a
@@ -42,8 +46,9 @@ export default class Banner extends Component {
                   className="fab fa-instagram"
                   href={data.instagram}
                   target="_blank"
-                  rel="noopener noreferrer"
-                ></a>
+                  rel="noopener noreferrer" 
+                  aria-label="instagram"
+                >{}</a>
               </li>
                <li>
                 <a
@@ -52,7 +57,8 @@ export default class Banner extends Component {
                   href={data.linkdin}
                   target="_blank"
                   rel="noopener noreferrer"
-                ></a>
+                  aria-label="patreon"
+                >{}</a>
               </li>
               <li>
                 <a
@@ -60,7 +66,8 @@ export default class Banner extends Component {
                   href={data.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                ></a>
+                  aria-label="youtube"
+                >{}</a>
               </li> 
             </ul>
           </div>
