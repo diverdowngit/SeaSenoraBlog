@@ -74,7 +74,7 @@ export const pageQuery = graphql`
   query AboutQuery {
     contentfulAboutMe {
       name
-     photo {
+      photo {
         file {
           url
         }
