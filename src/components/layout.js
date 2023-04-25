@@ -2,10 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import "bootstrap/dist/css/bootstrap.css";
-
 import Header from "./header";
 import Footer from "./footer";
-
 import "../css/style.css";
 import "../css/font-awesome.css";
 
@@ -40,7 +38,7 @@ const Layout = ({ children, header }) => (
         <div>
           <main id="home">{children}</main>
         </div>
-        <Footer siteName={data.contentfulSiteInformation.siteName} />
+        <Footer  />
       </>
     )}
   />

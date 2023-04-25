@@ -26,6 +26,7 @@ export default class Blogs extends Component {
                         fluid={item.node.featureImage.fluid}
                         objectFit="cover"
                         objectPosition="50% 50%"
+                        alt={item.node.title}
                       />
                     ) : (
                       <div className="no-image"></div>

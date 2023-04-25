@@ -6,10 +6,7 @@ import moment from "moment";
 import IMG from "../images/summer-computer.jpg";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import {
-  
-  overlay,adminText
-} from '../css/Keepafloat.module.css'
+import { overlay, adminText } from "../css/Keepafloat.module.css";
 export default class Blogs extends Component {
   render() {
     const { data } = this.props;
@@ -17,14 +14,13 @@ export default class Blogs extends Component {
       <Layout>
         <SEO
           title="Blogs"
-          keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`, `Blogs`]}
+          keywords={[`Sailing`, `Liveaboard`, `Cruiser`, `Blogs`]}
         />
-        
         <div className="site-container blogs-page" id="Blogs">
-       < div className={overlay}>
-      <img src={IMG} width="100%" alt="small island" />
-      <h2 className={adminText}>Enjoy Your Reading </h2>
-      </div>
+          <div className={overlay}>
+            <img src={IMG} width="100%" alt="small island" />
+            <h2 className={adminText}>Enjoy Your Reading </h2>
+          </div>
           <div className="container">
             <div className="section-head">
               <h1 className="line-heading h2">Blogs</h1>
@@ -69,7 +65,7 @@ export default class Blogs extends Component {
 
 export const pageQuery = graphql`
   query BlogsQuery {
-    allContentfulBlogs(sort: {fields: createdAt, order: DESC}) {
+    allContentfulBlogs(sort: { fields: createdAt, order: DESC }) {
       edges {
         node {
           title

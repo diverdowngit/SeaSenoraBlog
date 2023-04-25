@@ -4,6 +4,7 @@
   "description": "WebPage for SV Sea Senora. Sailing,Travel,YouTube And Blog Site.A Must To Check Out.",
   "version": "0.1.0",
   "author": "fred",
+  
   "dependencies": {
     "bootstrap": "^4.4.1",
     "disqus-react": "^1.0.7",
@@ -32,7 +33,7 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "Sailing, Liveaboard, Cruiser"
   ],
   "license": "MIT",
   "scripts": {
@@ -46,9 +47,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rohitguptab/rg-portfolio"
-  },
-  "bugs": {
-    "url": "https://github.com/rohitguptab/rg-portfolio/issues"
+    "url": "https://github.com/diverdowngit/seasenorablog"
   }
+  
+  
 }

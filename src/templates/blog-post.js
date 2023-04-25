@@ -6,7 +6,7 @@ import moment from "moment";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Share from "../components/share";
+// import Share from "../components/share";
 
 export default class blogPost extends Component {
   render() {
@@ -17,16 +17,16 @@ export default class blogPost extends Component {
     //   title: data.title
     // };
 
-    const siteurl = this.props.data.contentfulSiteInformation.siteUrl + "/";
-    const twitterhandle = this.props.data.contentfulSiteInformation
-      .twitterHandle;
-    const socialConfigss = {
-      site: {
-        siteMetadata: { siteurl, twitterhandle }
-      },
-      title: data.title,
-      slug: data.slug
-    };
+    // const siteurl = this.props.data.contentfulSiteInformation.siteUrl + "/";
+    // const twitterhandle = this.props.data.contentfulSiteInformation
+    //   .twitterHandle;
+    // const socialConfigss = {
+    //   site: {
+    //     siteMetadata: { siteurl, twitterhandle }
+    //   },
+    //   title: data.title,
+    //   slug: data.slug
+    // };
 
     return (
       <Layout>
@@ -63,7 +63,7 @@ export default class blogPost extends Component {
                 }}
               />
             </div>
-            <Share
+            {/* <Share
               socialConfig={{
                 ...socialConfigss.site.siteMetadata.twitterhandletitle,
                 config: {
@@ -71,7 +71,7 @@ export default class blogPost extends Component {
                   title: `${socialConfigss.title}`
                 }
               }}
-            />
+            /> */}
             {/* <DiscussionEmbed
               shortname={disqusShortname}
               config={disqusConfig}

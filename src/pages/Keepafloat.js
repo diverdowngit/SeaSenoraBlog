@@ -1,35 +1,30 @@
-import * as React from 'react'
-
-import Layout from '../components/layout'
-import Seo from '../components/seo'
-
-import Patron from '../images/patreon-icon.png'
-import Img from '../images/sailboatonrocks.png'
+import * as React from "react";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import Patron from "../images/patreon-icon.png";
+import Img from "../images/sailboatonrocks.png";
 import {
   container,
   bookingwrapper,
   wrapper,
   staywrapper,
   aboutCards,
-  overlay,adminText
-} from '../css/Keepafloat.module.css'
-
+  overlay,
+  adminText,
+} from "../css/Keepafloat.module.css";
 
 const Keepafloat = () => {
   return (
     <Layout>
-       <div className={overlay}>
-      <img src={Img} width="100%" alt="small island" />
-      <h2 className={adminText}>Our Passion For Travel Is The Foundation Of Sv Sea Senora. </h2>
+      <div className={overlay}>
+        <img src={Img} width="100%" alt="small island" />
+        <h2 className={adminText}>
+          Our Passion For Travel Is The Foundation Of Sv Sea Senora.{" "}
+        </h2>
       </div>
-      {/* <Header
-        img={Img}
-        centerText="Thanks for Keeping us Afloat and off the Rocks "
-        location=""
-      /> */}
       <div className={container}>
         <div className={wrapper}>
-          {' '}
+          {" "}
           <img
             src={Patron}
             href="https://www.patreon.com/user?u=84347902"
@@ -63,16 +58,14 @@ const Keepafloat = () => {
               </a>
             </div>
           </div>
-
           <div className={staywrapper}>
             <div className={aboutCards}>
               <h1>PayPal</h1>
               <p>
                 If you would like to make a One time donation click the button
                 below to go to our PayPal page We would like to thank you in
-                advance for your support!{' '}
+                advance for your support!{" "}
               </p>
-
               <a
                 href="https://www.paypal.com"
                 alt="Paypal"
@@ -86,8 +79,8 @@ const Keepafloat = () => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export const Head = () => <Seo title="Keep afloat" />
-export default Keepafloat
+export const Head = () => <Seo title="Keep afloat" />;
+export default Keepafloat;
